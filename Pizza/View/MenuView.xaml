@@ -1,0 +1,119 @@
+﻿<UserControl x:Class="Pizza.View.MenuView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Pizza.View"
+             mc:Ignorable="d" 
+             Height="auto" Width="755">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="/Pictures/love.jpg" Opacity="0.2" Stretch="UniformToFill"/>
+        </Grid.Background>
+        
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="64*"/>
+                            <ColumnDefinition Width="195*"/>
+                            <ColumnDefinition Width="258*"/>
+                            <ColumnDefinition Width="258*"/>
+                        </Grid.ColumnDefinitions>
+
+                        <Grid Grid.Column="0" Height="300" Background="#FFF3F3F3" Margin="10,10,10.2,234.8" Grid.ColumnSpan="2">
+                            <Grid.Effect>
+                                <DropShadowEffect BlurRadius="20" Color="#FFDEDEDE" ShadowDepth="1"/>
+                            </Grid.Effect>
+
+                            <StackPanel Width="200">
+                                <TextBlock Margin="10" FontFamily="Arial Bold" FontSize="18" Text="Четыре сыра" Foreground="#FFC00000"/>
+                                <Image Source="/Pictures/size_960_16_9_pizza2.jpg" Width="200" Height="150" Stretch="UniformToFill" />
+                                <TextBlock FontSize="12" Margin="5" TextWrapping="Wrap" FontFamily="Champagne &amp; Limousines"><Run Text="Сливочный соус, сыр Блю Чиз, сыр Моцарелла и смесь сыров Чеддер и Пармезан"/></TextBlock>
+
+                                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                                    <TextBlock Text="500 руб." VerticalAlignment="Center" Margin="10" FontSize="20" FontFamily="Champagne &amp; Limousines"/>
+                                    <Button Width="100" Content="В заказ" FontFamily="Champagne &amp; Limousines" Margin="10"/>
+                                </StackPanel>
+                            </StackPanel>
+                        </Grid>
+                        <Grid Grid.Column="2" Height="300" Background="#FFF3F3F3" Margin="9.8,10,9.8,234.8">
+                            <Grid.Effect>
+                                <DropShadowEffect BlurRadius="20" Color="#FFDEDEDE" ShadowDepth="1"/>
+                            </Grid.Effect>
+
+                            <StackPanel Width="200">
+                                <TextBlock Margin="10" FontFamily="Arial Bold" FontSize="18" Text="Цезарь" Foreground="#FFC00000"/>
+                                <Image Source="/Pictures/cez.jpg" Width="200" Height="150" Stretch="UniformToFill" />
+                                <TextBlock FontSize="12" Margin="5" TextWrapping="Wrap" FontFamily="Champagne &amp; Limousines">
+Соус Цезарь, листья Романо, Пармезан, грудка цыпленка и сыр Моцарелла</TextBlock>
+                                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                                    <TextBlock Text="550 руб." VerticalAlignment="Center" Margin="10" FontSize="20" FontFamily="Champagne &amp; Limousines"/>
+                                    <Button Width="100" Content="В заказ" FontFamily="Champagne &amp; Limousines" Margin="10"/>
+                                </StackPanel>
+                            </StackPanel>
+                        </Grid>
+                        <Grid Grid.Column="3" Height="300" Background="#FFF3F3F3" Margin="10.2,10,10.4,234.8">
+                            <Grid.Effect>
+                                <DropShadowEffect BlurRadius="20" Color="#FFDEDEDE" ShadowDepth="1"/>
+                            </Grid.Effect>
+
+                            <StackPanel Width="200">
+                                <TextBlock Margin="10" FontFamily="Arial Bold" FontSize="18" Text="Эль Гаучо" Foreground="#FFC00000"/>
+                                <Image Source="/Pictures/elg.png" Width="200" Height="150" Stretch="UniformToFill" />
+                                <TextBlock FontSize="12" Margin="5" TextWrapping="Wrap" FontFamily="Champagne &amp; Limousines">
+Куриное филе, шампиньоны, маслины, сыр Моцарелла, соус Коктейль, специи и зелень</TextBlock>
+                                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                                    <TextBlock Text="400 руб." VerticalAlignment="Center" Margin="10" FontSize="20" FontFamily="Champagne &amp; Limousines"/>
+                                    <Button Width="100" Content="В заказ" FontFamily="Champagne &amp; Limousines" Margin="10"/>
+                                </StackPanel>
+                            </StackPanel>
+                        </Grid>
+                        <Grid Grid.Column="0" Height="300" Background="#FFF3F3F3" Margin="10,331,10.2,-86.2" Grid.ColumnSpan="2">
+                            <Grid.Effect>
+                                <DropShadowEffect BlurRadius="20" Color="#FFDEDEDE" ShadowDepth="1"/>
+                            </Grid.Effect>
+
+                            <StackPanel Width="200">
+                                <TextBlock Margin="10" FontFamily="Arial Bold" FontSize="18" Text="Гавайская" Foreground="#FFC00000"/>
+                                <Image Source="/Pictures/gav.jpg" Width="200" Height="150" Stretch="UniformToFill" />
+                                <TextBlock FontSize="12" Margin="5" TextWrapping="Wrap" FontFamily="Champagne &amp; Limousines"><Run Text="Цыпленок, томатный соус, сыр Моцарелла и ананасы"/></TextBlock>
+                                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                                    <TextBlock Text="490 руб." VerticalAlignment="Center" Margin="10" FontSize="20" FontFamily="Champagne &amp; Limousines"/>
+                                    <Button Width="100" Content="В заказ" FontFamily="Champagne &amp; Limousines" Margin="10"/>
+                                </StackPanel>
+                            </StackPanel>
+                        </Grid>
+                        <Grid Grid.Column="2" Height="300" Background="#FFF3F3F3" Margin="9.8,331,9.8,-86.2">
+                            <Grid.Effect>
+                                <DropShadowEffect BlurRadius="20" Color="#FFDEDEDE" ShadowDepth="1"/>
+                            </Grid.Effect>
+
+                            <StackPanel Width="200">
+                                <TextBlock Margin="10" FontFamily="Arial Bold" FontSize="18" Text="Пепперони" Foreground="#FFC00000"/>
+                                <Image Source="/Pictures/pizzabar.jpg" Width="200" Height="150" Stretch="UniformToFill" />
+                                <TextBlock FontSize="12" Margin="5" TextWrapping="Wrap" FontFamily="Champagne &amp; Limousines">
+  Пикантная пепперони, томатный соус и сыр Моцарелла</TextBlock>
+                                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                                    <TextBlock Text="600 руб." VerticalAlignment="Center" Margin="10" FontSize="20" FontFamily="Champagne &amp; Limousines"/>
+                                    <Button Width="100" Content="В заказ" FontFamily="Champagne &amp; Limousines" Margin="10"/>
+                                </StackPanel>
+                            </StackPanel>
+                        </Grid>
+                        <Grid Grid.Column="3" Height="300" Background="#FFF3F3F3" Margin="10.2,331,10.4,-86.2">
+                            <Grid.Effect>
+                                <DropShadowEffect BlurRadius="20" Color="#FFDEDEDE" ShadowDepth="1"/>
+                            </Grid.Effect>
+
+                            <StackPanel Width="200">
+                                <TextBlock Margin="10" FontFamily="Arial Bold" FontSize="18" Text="Фруктовая" Foreground="#FFC00000"/>
+                                <Image Source="/Pictures/Pizza-doce-de-Brigadeiro.jpg" Width="200" Height="150" Stretch="UniformToFill" />
+                                <TextBlock FontSize="12" Margin="0,5,5,5" TextWrapping="Wrap" FontFamily="Champagne &amp; Limousines" HorizontalAlignment="Right" Width="190"><Run Text="Клубника, сыр Маскарпоне и молочный шоколад"/></TextBlock>
+                                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                                    <TextBlock Text="450 руб." VerticalAlignment="Center" Margin="10" FontSize="20" FontFamily="Champagne &amp; Limousines"/>
+                                    <Button Width="100" Content="В заказ" FontFamily="Champagne &amp; Limousines" Margin="10"/>
+                                </StackPanel>
+                            </StackPanel>
+                        </Grid>
+                    </Grid>
+               
+    </Grid>
+</UserControl>
